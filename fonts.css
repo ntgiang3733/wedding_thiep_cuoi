@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'dancing_scriptregular';
+    src: url('./fonts/Dancing_Script/static/DancingScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dancing_scriptbold';
+    src: url('dancingscript-bold.woff2') format('woff2'),
+        url('dancingscript-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'comfortaabold';
+    src: url('comfortaa-bold.woff2') format('woff2'),
+        url('comfortaa-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'comfortaalight';
+    src: url('comfortaa-light.woff2') format('woff2'),
+        url('comfortaa-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'comfortaaregular';
+    src: url('./fonts/Comfortaa/static/Comfortaa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'prataregular';
+    src: url('prata-regular.woff2') format('woff2'),
+        url('prata-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('pacifico-regular.woff2') format('woff2'),
+        url('pacifico-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Miller Banner';
+    src: url('SVN-Miller-Banner.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

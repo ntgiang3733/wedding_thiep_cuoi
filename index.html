@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Việt Hoàng & Nguyễn Linh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jura:wght@300&amp;family=MonteCarlo&amp;family=Tourney:wght@100&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura%7CGreat+Vibes%7CTourney:100" media="all">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="invitation-container">
+        <div style="height: 100%;margin: 10px;">
+            <canvas class="invitation-card" id="invitation-card" width="1500" height="2120"
+                style="letter-spacing: 0px;"></canvas>
+        </div>
+        <div style="height: 100%;margin: 10px;">
+            <canvas class="invitation-card" id="invitation-card-2" width="1500" height="2120"
+                style="letter-spacing: 2px;"></canvas>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="invitation-button">
+                <a class="btn btn-dark" href="https://viet-hoang-nguyen-linh.netlify.app/" target="_blank">Thông tin
+                    cưới</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="page_loader" class="page_loader">
+        <div id="loader">
+            <img height="20" src="./loading.svg">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            let value = urlParams.get(param) || "";
+            return decodeURIComponent(value);
+        }
+        let name = getQueryParam("name") || "Bạn";
+        name = name.replaceAll("_", " ");
+        name = name.replaceAll("*", "+");
+        const invitationInfo = {
+            'templateID': 'h4',
+            'groom_name': 'Đỗ Việt Hoàng',
+            'bride_name': 'Nguyễn Thị Linh',
+            'groom_name_short': 'Việt Hoàng',
+            'bride_name_short': 'Nguyễn Linh',
+            'groom_name_one': 'H',
+            'bride_name_one': 'L',
+            'guest_name': name,
+            'event_name': 'BỮA CƠM THÂN MẬT NHÀ GÁI',
+            'event_time': '10:30',
+            'event_date': 'Thứ 3, Ngày 10/12/2024',
+            'event_date_dot': '10.12.2024',
+            'venue_name': '',
+            'event_address': 'SN398 Yên Hoành, Định Tân, Yên Định, Thanh Hóa',
+        };
+        const biicore = {};
+    </script>
+    <script src="script_2.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
