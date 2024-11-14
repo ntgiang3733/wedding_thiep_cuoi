@@ -126,10 +126,10 @@ var renderCanvas2 = function () {
             ctx.save();
         }
 
-        // ctx.fillStyle = '#BB9B83';
-        // ctx.font = "45px 'comfortaaregular', cursive";
-        // ctx.fillText(('Vào lúc ' + invitationInfo.event_time).toUpperCase(), canvas.width / 2, 1440);
-        // ctx.save();
+        ctx.fillStyle = '#BB9B83';
+        ctx.font = "45px 'comfortaaregular', cursive";
+        ctx.fillText(('Vào lúc ' + invitationInfo.event_time).toUpperCase(), canvas.width / 2, 1440);
+        ctx.save();
 
         ctx.font = "45px 'comfortaaregular', cursive";
         ctx.fillText(invitationInfo.event_date.toUpperCase(), canvas.width / 2, 1520);
