@@ -245,7 +245,7 @@ body {
 
 .footer .btn {
     font-size: 15px;
-    width: 154px;
+    min-width: 340px;
 }
 
 .a-bii-small-logo {
