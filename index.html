@@ -30,7 +30,16 @@
     <div class="footer">
         <div class="container">
             <div class="invitation-button">
-                <a class="btn btn-dark" href="https://viet-hoang-nguyen-linh.netlify.app/" target="_blank">
+                <!-- <a class="btn btn-dark" href="https://viet-hoang-nguyen-linh.netlify.app/" target="_blank">
+                    Vào đây để xem thông tin và ảnh cưới của chúng mình nhé!
+                </a> -->
+
+                <a href="https://viet-hoang-nguyen-linh.netlify.app/" target="_blank"
+                    class="btn btn-dark animated-button1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                     Vào đây để xem thông tin và ảnh cưới của chúng mình nhé!
                 </a>
             </div>
@@ -52,6 +61,8 @@
         let name = getQueryParam("name") || "Bạn";
         name = name.replaceAll("_", " ");
         name = name.replaceAll("*", "+");
+
+        let type = getQueryParam("type") || "groom"; // groom | bride
         const invitationInfo = {
             'templateID': 'h4',
             'groom_name': 'Đỗ Việt Hoàng',
@@ -62,11 +73,11 @@
             'bride_name_one': 'L',
             'guest_name': name,
             'event_name': 'BỮA CƠM THÂN MẬT NHÀ GÁI',
-            'event_time': '09:30',
+            'event_time': "17:00",
             'event_date': 'Thứ 3, Ngày 10/12/2024',
             'event_date_dot': '12.12.2024',
             'venue_name': '',
-            'event_address': 'SN398 Yên Hoành, Định Tân, Yên Định, Thanh Hóa',
+            'event_address': type === "groom" ? 'SN195 Yên Hoành, Định Tân, Yên Định, Thanh Hóa' : 'SN398 Yên Hoành, Định Tân, Yên Định, Thanh Hóa',
         };
         const biicore = {};
     </script>
