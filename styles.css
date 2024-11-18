@@ -253,7 +253,7 @@ body {
 .footer {
     font-size: 15px;
     background-color: #474050;
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
     color: #fff;
     text-align: center;
     letter-spacing: 1px;
@@ -900,15 +900,16 @@ body {
 }
 
 .animated-button1 {
-    background: linear-gradient(-30deg, #879593 50%, #647775 50%);
+    background: linear-gradient(-30deg, #253d3d 50%, #3b4140 50%);
     padding: 5px 10px;
     margin: 12px;
     display: inline-block;
     -webkit-transform: translate(0%, 0%);
     transform: translate(0%, 0%);
     overflow: hidden;
-    color: #f7d4d4;
+    color: #fae0e0;
     font-size: 20px;
+    font-weight: 600;
     letter-spacing: 2.5px;
     text-align: center;
     text-transform: uppercase;

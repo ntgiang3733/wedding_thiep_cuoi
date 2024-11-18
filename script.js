@@ -18,19 +18,19 @@ var renderCanvas1 = function () {
 
         canvas.style.letterSpacing = '10px';
         ctx.fillStyle = '#f4ebd0';
-        ctx.font = "bold 48px 'comfortaaregular', cursive";
+        ctx.font = "bolder 58px 'comfortaaregular', cursive";
         ctx.fillText(invitationInfo.event_date_dot, canvas.width / 2, 1490);
         ctx.save();
 
         ctx.fillStyle = '#fff';
         canvas.style.letterSpacing = '0';
-        ctx.font = "45px 'Jura', cursive";
+        ctx.font = "55px 'Jura', cursive";
         ctx.fillText('THE WEDDING OF', canvas.width / 2, 1700);
         ctx.save();
 
         canvas.style.letterSpacing = '0';
         ctx = canvas.getContext('2d');
-        ctx.font = "95px 'dancing_scriptregular', cursive";
+        ctx.font = "110px 'dancing_scriptregular', cursive";
         ctx.textBaseline = 'middle';
         ctx.textAlign = 'center';
         ctx.fillText(invitationInfo.groom_name_short + '  &  ' + invitationInfo.bride_name_short, canvas.width / 2, 1820);
@@ -51,42 +51,42 @@ var renderCanvas2 = function () {
 
         ctx.textBaseline = 'middle';
         ctx.textAlign = 'center';
-        ctx.fillStyle = '#647775';
+        ctx.fillStyle = '#4b5958';
 
         canvas.style.letterSpacing = '10px';
-        ctx.font = "100 60px 'patrick_handregular', cursive";
+        ctx.font = "110 70px 'patrick_handregular', cursive";
         ctx.fillText('Wedding Invitation', canvas.width / 2, 270);
         ctx.save();
 
         canvas.style.letterSpacing = '6px';
         ctx = canvas.getContext('2d');
-        ctx.font = "35px 'Jura', cursive";
+        ctx.font = "45px 'Jura', cursive";
         ctx.fillText('Save The Date', canvas.width / 2, 340);
         ctx.save();
 
         canvas.style.letterSpacing = '0';
-        ctx.fillStyle = '#BB9B83';
+        ctx.fillStyle = '#9A7E6A';
         ctx = canvas.getContext('2d');
-        ctx.font = "95px 'dancing_scriptregular', cursive";
+        ctx.font = "120px 'dancing_scriptregular', cursive";
         ctx.textBaseline = 'middle';
         ctx.textAlign = 'center';
         ctx.fillText(invitationInfo.groom_name_short + '  &  ' + invitationInfo.bride_name_short, canvas.width / 2, 640);
         ctx.save();
 
-        ctx.fillStyle = '#647775';
+        ctx.fillStyle = '#4b5958';
         canvas.style.letterSpacing = '2px';
-        ctx.font = "45px 'Jura', cursive";
+        ctx.font = "50px 'Jura', cursive";
         ctx.fillText('TRÂN TRỌNG KÍNH MỜI', canvas.width / 2, 800);
         ctx.save();
 
-        ctx.font = "bold 60px 'comfortaaregular', cursive";
+        ctx.font = "bold 70px 'comfortaaregular', cursive";
         ctx.fillText(invitationInfo.guest_name, canvas.width / 2, 910);
         ctx.save();
 
         const canvasTxt0 = window.canvasTxt.default;
         canvasTxt0.font = "'Jura', cursive";
         canvasTxt0.fontSize = 45;
-        canvasTxt0.fontWeight = '200';
+        canvasTxt0.fontWeight = '600';
         canvasTxt0.vAlign = 'top';
         canvasTxt0.align = 'center';
         canvasTxt0.lineHeight = 55;
@@ -122,11 +122,12 @@ var renderCanvas2 = function () {
             canvasTxt.vAlign = 'top';
             canvasTxt.align = 'center';
             canvasTxt.lineHeight = 60;
-            canvasTxt.drawText(ctx, invitationInfo.event_address, canvas.width / 2 - canvasTxt0Width / 2, 1190, canvasTxt0Width + 25, 200);
+            canvasTxt.drawText(ctx, invitationInfo.event_address, canvas.width / 2 - canvasTxt0Width / 2, 1190, canvasTxt0Width + 35, 200);
             ctx.save();
         }
 
-        ctx.fillStyle = '#BB9B83';
+        ctx.fontWeight = 'bold';
+        ctx.fillStyle = '#9A7E6A';
         ctx.font = "45px 'comfortaaregular', cursive";
         ctx.fillText(('Vào lúc ' + invitationInfo.event_time).toUpperCase(), canvas.width / 2, 1440);
         ctx.save();
@@ -135,7 +136,7 @@ var renderCanvas2 = function () {
         ctx.fillText(invitationInfo.event_date.toUpperCase(), canvas.width / 2, 1520);
         ctx.save();
 
-        ctx.fillStyle = '#647775';
+        ctx.fillStyle = '#4b5958';
         const canvasTxt1 = window.canvasTxt.default;
         canvasTxt1.font = "'dancing_scriptregular', cursive";
         canvasTxt1.fontSize = 50;
